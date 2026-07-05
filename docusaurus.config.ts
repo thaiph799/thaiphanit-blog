@@ -65,90 +65,120 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-  title: 'Phan Hoang Thai',
+  title: 'Thai Phan IT',
   logo: {
-    alt: 'Phan Hoang Thai Logo',
+    alt: 'Thai Phan IT Logo',
     src: 'img/logo.svg',
   },
   items: [
     {
-      type: 'docSidebar',
-      sidebarId: 'tutorialSidebar',
+      label: 'Microsoft 365',
+      to: '/blog/tags/microsoft-365',
       position: 'left',
+    },
+    {
+      label: 'Intune',
+      to: '/blog/tags/intune',
+      position: 'left',
+    },
+    {
+      label: 'Azure',
+      to: '/blog/tags/azure',
+      position: 'left',
+    },
+    {
+      label: 'Security',
+      to: '/blog/tags/security',
+      position: 'left',
+    },
+    {
+      label: 'Hands-on Labs',
+      to: '/docs/portfolio/intro',
+      position: 'left',
+    },
+    {
       label: 'Portfolio',
+      to: '/docs/portfolio/intro',
+      position: 'right',
     },
     {
-      to: '/blog',
       label: 'Blog',
-      position: 'left',
-    },
-    {
-      to: '/about',
-      label: 'About',
+      to: '/blog',
       position: 'right',
     },
     {
-      to: '/resume',
       label: 'Resume',
+      to: '/resume',
       position: 'right',
     },
     {
-      href: 'https://github.com/thaiph799/',
+      href: 'https://github.com/thaiph799',
       label: 'GitHub',
-      position: 'right',
-    },
-    {
-      href: 'https://www.linkedin.com/in/thaiph/',
-      label: 'LinkedIn',
       position: 'right',
     },
   ],
 },
     footer: {
-      style: 'dark',
-      links: [
+  style: 'dark',
+  links: [
+    {
+      title: 'Portfolio',
+      items: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
+          label: 'Microsoft 365 E5 Portfolio',
+          to: '/docs/portfolio/intro',
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
+          label: 'Intune Labs',
+          to: '/docs/portfolio/intro',
         },
         {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          label: 'Security Labs',
+          to: '/docs/portfolio/intro',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
+    {
+      title: 'Topics',
+      items: [
+        {
+          label: 'Microsoft 365',
+          to: '/blog/tags/microsoft-365',
+        },
+        {
+          label: 'Intune',
+          to: '/blog/tags/intune',
+        },
+        {
+          label: 'Azure',
+          to: '/blog/tags/azure',
+        },
+        {
+          label: 'Security',
+          to: '/blog/tags/security',
+        },
+      ],
+    },
+    {
+      title: 'Connect',
+      items: [
+        {
+          label: 'GitHub',
+          href: 'https://github.com/YOUR-GITHUB-USERNAME',
+        },
+        {
+          label: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/YOUR-LINKEDIN',
+        },
+        {
+          label: 'Resume',
+          to: '/resume',
+        },
+      ],
+    },
+  ],
+  copyright: `Copyright © ${new Date().getFullYear()} Thai Phan IT. Built with Docusaurus.`,
+},
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

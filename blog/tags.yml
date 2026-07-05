@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Microsoft 365 technical articles and portfolio notes
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+intune:
+  label: Intune
+  permalink: /intune
+  description: Microsoft Intune and endpoint management
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+azure:
+  label: Azure
+  permalink: /azure
+  description: Microsoft Azure infrastructure and networking
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+security:
+  label: Security
+  permalink: /security
+  description: Security, Zero Trust, Defender XDR, and Microsoft cloud security articles
+
+portfolio:
+  label: Portfolio
+  permalink: /portfolio
+  description: Career portfolio and project documentation

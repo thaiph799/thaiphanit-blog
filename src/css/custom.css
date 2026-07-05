@@ -1,30 +1,304 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #172554;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-font-family-base: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.navbar {
+  box-shadow: 0 1px 20px rgba(15, 23, 42, 0.08);
+}
+
+.tpHero {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #111827 45%, #1e3a8a 100%);
+  color: white;
+  padding: 6rem 2rem;
+}
+
+.tpHeroInner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.tpHeroText h1 {
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.tpHeroDescription {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #dbeafe;
+  max-width: 760px;
+}
+
+.tpEyebrow {
+  color: #60a5fa;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  margin-bottom: 0.8rem;
+}
+
+.tpHeroButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.tpHeroCard {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  padding: 2rem;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.tpHeroCard h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.tpHeroCard p {
+  color: #dbeafe;
+}
+
+.tpCardLabel {
+  color: #93c5fd !important;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.tpMetricGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.tpMetricGrid div {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.tpMetricGrid strong {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.tpMetricGrid span {
+  color: #bfdbfe;
+  font-size: 0.85rem;
+}
+
+.tpSection {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.tpSectionHeader {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.tpSectionHeader h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.tpSectionHeader p {
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.tpCardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.tpLabCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tpLabCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.14);
+}
+
+.tpLabCard span {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.tpLabCard h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-bottom: 0.8rem;
+}
+
+.tpLabCard p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.tpLabCard a {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.tpDarkSection {
+  background: #0f172a;
+  padding: 5rem 2rem;
+}
+
+.tpDarkSection .tpSectionHeader {
+  max-width: 1180px;
+  margin: 0 auto 2rem auto;
+}
+
+.tpLightText h2,
+.tpLightText p {
+  color: white;
+}
+
+.tpLightText p {
+  color: #cbd5e1;
+}
+
+.tpPillGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tpPill {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0f2fe;
+  border: 1px solid rgba(147, 197, 253, 0.25);
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  font-weight: 700;
+}
+
+.tpTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.tpTwoColumn p {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.tpProfileBox {
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  border: 1px solid #dbeafe;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.tpProfileBox h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tpProfileBox ul {
+  padding-left: 1.2rem;
+  line-height: 2;
+}
+
+.tpBlogCta {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .tpHeroInner,
+  .tpTwoColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .tpCardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tpHero {
+    padding: 4rem 1.2rem;
+  }
+
+  .tpSection,
+  .tpDarkSection {
+    padding: 4rem 1.2rem;
+  }
+
+  .tpCardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tpHeroButtons {
+    flex-direction: column;
+  }
+
+  .tpHeroButtons .button {
+    width: 100%;
+  }
+}
+
+[data-theme='dark'] .tpSection {
+  background: #111827;
+}
+
+[data-theme='dark'] .tpLabCard,
+[data-theme='dark'] .tpProfileBox,
+[data-theme='dark'] .tpBlogCta {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+[data-theme='dark'] .tpSectionHeader p,
+[data-theme='dark'] .tpLabCard p,
+[data-theme='dark'] .tpTwoColumn p {
+  color: #d1d5db;
 }
