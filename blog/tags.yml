@@ -8,10 +8,40 @@ intune:
   permalink: /intune
   description: Microsoft Intune and endpoint management
 
+endpoint:
+  label: Endpoint
+  permalink: /endpoint
+  description: Windows endpoint management, compliance, security baseline, and troubleshooting
+
 azure:
   label: Azure
   permalink: /azure
-  description: Microsoft Azure infrastructure and networking
+  description: Microsoft Azure infrastructure and administration
+
+network:
+  label: Network
+  permalink: /network
+  description: On-prem, hybrid, and Azure networking articles
+
+on-prem:
+  label: On-Prem
+  permalink: /on-prem
+  description: On-premises network and infrastructure foundations
+
+hybrid:
+  label: Hybrid
+  permalink: /hybrid
+  description: Hybrid infrastructure and connectivity between on-premises and cloud
+
+az-700:
+  label: AZ-700
+  permalink: /az-700
+  description: Azure Network Engineer Associate lab notes and portfolio content
+
+az-104:
+  label: AZ-104
+  permalink: /az-104
+  description: Azure Administrator Associate lab notes and portfolio content
 
 security:
   label: Security

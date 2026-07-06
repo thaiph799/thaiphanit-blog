@@ -1,29 +1,36 @@
 ---
 title: Portfolio Overview
-description: Microsoft 365, Endpoint Management, Azure Network, and Security portfolio by Phan Hoang Thai.
+description: Overview of the Thai Phan IT enterprise portfolio.
+sidebar_position: 1
 ---
 
 # Portfolio Overview
 
-Welcome to my technical portfolio.
+## Portfolio Positioning
 
-This portfolio documents my hands-on labs, enterprise implementation scenarios, troubleshooting workflows, and technical notes across Microsoft 365, Microsoft Intune, Microsoft Entra ID, Azure Networking, Defender XDR, Purview, and SCCM/MECM.
+This website is an evidence-based technical portfolio for Microsoft 365, Intune, Endpoint Management, Azure Networking, On-Prem Infrastructure, Security, and enterprise IT operations.
 
-## Focus Areas
+## Portfolio Pillars
 
-- Microsoft 365 Administration
-- Microsoft Intune and Endpoint Management
-- Microsoft Entra ID and Conditional Access
-- Microsoft Defender XDR
-- Microsoft Purview
-- Azure Networking
-- SCCM / MECM Troubleshooting
+| Pillar | Purpose |
+|---|---|
+| Microsoft 365 E5 | Tenant administration, governance, service operations, and enterprise readiness |
+| Intune & Endpoint | Device compliance, app protection, endpoint hardening, and modern management |
+| Identity & Zero Trust | Entra ID, MFA, Conditional Access, break-glass, and access lifecycle |
+| Security Operations | Defender XDR, phishing protection, incident response, and alert triage |
+| Compliance & Purview | Sensitivity labels, DLP, retention, audit, and eDiscovery |
+| Network & Infrastructure | On-prem network, hybrid connectivity, Azure networking, and troubleshooting |
+| SCCM / MECM | Client policy, deployment, logs, reboot policy, and enterprise troubleshooting |
 
-## Featured Portfolio Labs
+## How Each Lab Is Written
 
-- Intune BYOD Data Protection
-- Conditional Access with Compliant Device
-- Windows 11 Security Baseline
-- Microsoft 365 E5 Global Enterprise Scenario
-- Defender XDR Incident Response
-- Purview Data Protection
+Each lab should include:
+
+1. Business problem
+2. Target architecture
+3. Implementation workflow
+4. Verification evidence
+5. Troubleshooting notes
+6. Business impact
+7. Interview explanation
+

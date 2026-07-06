@@ -1,39 +1,85 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+
+const focusAreas = [
+  'Microsoft 365 administration',
+  'Microsoft Intune and endpoint management',
+  'Microsoft Entra ID and Conditional Access',
+  'Azure networking and hybrid connectivity',
+  'On-prem network services: DNS, DHCP, AD DS, file access',
+  'Microsoft Defender XDR and security operations',
+  'Microsoft Purview and data protection',
+  'SCCM / MECM troubleshooting',
+];
 
 export default function About(): React.ReactElement {
   return (
-    <Layout title="About">
-      <main style={{ padding: '3rem 2rem', maxWidth: '900px', margin: '0 auto' }}>
-        <h1>About Me</h1>
+    <Layout
+      title="About"
+      description="About Phan Hoang Thai and the Thai Phan IT technical portfolio."
+    >
+      <main className="tpPage">
+        <section className="tpPageHero">
+          <p className="tpEyebrow">About Thai Phan IT</p>
+          <h1>Microsoft cloud, endpoint, network, and security portfolio.</h1>
+          <p>
+            My name is Phan Hoang Thai. I am building a professional technical portfolio focused on Microsoft 365, Intune, Azure Networking, on-prem infrastructure, security, and enterprise IT operations.
+          </p>
+        </section>
 
-        <p>
-          My name is Phan Hoang Thai. I am building my career around Microsoft 365,
-          Endpoint Management, Azure Networking, and enterprise IT operations.
-        </p>
+        <section className="tpContentGrid">
+          <article className="tpContentCard">
+            <h2>Professional Direction</h2>
+            <p>
+              This website documents hands-on labs, architecture notes, troubleshooting workflows, and evidence-based projects for Microsoft 365, endpoint management, Azure network, IT support, and modern workplace roles.
+            </p>
+            <p>
+              The goal is to show not only what I studied, but how I think through real operational scenarios: business impact, technical implementation, verification, logs, troubleshooting, and documentation.
+            </p>
+          </article>
 
-        <p>
-          This website documents my hands-on labs, technical troubleshooting notes,
-          certification journey, and enterprise-style portfolio projects.
-        </p>
+          <article className="tpContentCard">
+            <h2>Verified Certifications</h2>
+            <ul>
+              <li>Microsoft Certified: Azure Administrator Associate — AZ-104</li>
+              <li>Microsoft Certified: Azure Network Engineer Associate — AZ-700</li>
+            </ul>
 
-        <h2>Focus Areas</h2>
-        <ul>
-          <li>Microsoft Intune and Endpoint Management</li>
-          <li>Microsoft Entra ID and Conditional Access</li>
-          <li>Microsoft Defender XDR</li>
-          <li>Microsoft Purview</li>
-          <li>Azure Networking</li>
-          <li>SCCM/MECM troubleshooting</li>
-        </ul>
+            <h3>Active Portfolio Learning Tracks</h3>
+            <ul>
+              <li>Microsoft 365 Administrator / MS-102 direction</li>
+              <li>Endpoint Administrator / MD-102 direction</li>
+              <li>Intune, Entra ID, Conditional Access, Defender XDR, and Purview labs</li>
+            </ul>
+          </article>
+        </section>
 
-        <h2>Certifications</h2>
-        <ul>
-          <li>Microsoft Certified: Azure Administrator Associate - AZ-104</li>
-          <li>Microsoft Certified: Azure Network Engineer Associate - AZ-700</li>
-          <li>Microsoft 365 Certified: Administrator Expert - MS-102</li>
-          <li>Microsoft 365 Certified: Endpoint Administrator Associate - MD-102</li>
-        </ul>
+        <section className="tpSectionNarrow">
+          <h2>Focus Areas</h2>
+          <div className="tpPillGrid tpPillGridLight">
+            {focusAreas.map((item) => (
+              <span className="tpPillLight" key={item}>
+                {item}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <section className="tpBlogCta">
+          <h2>Explore the portfolio</h2>
+          <p>
+            Start with the portfolio overview or the Network track to see the complete on-prem, hybrid, and Azure infrastructure structure.
+          </p>
+          <div className="tpButtonRowCenter">
+            <Link className="button button--primary" to="/docs/portfolio/intro">
+              Portfolio Overview
+            </Link>
+            <Link className="button button--secondary" to="/docs/network/intro">
+              Network Track
+            </Link>
+          </div>
+        </section>
       </main>
     </Layout>
   );

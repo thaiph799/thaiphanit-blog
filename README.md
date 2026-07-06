@@ -1,41 +1,70 @@
-# Website
+# Thai Phan IT — Microsoft 365, Intune, Azure Network & Security Portfolio
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains my personal technical portfolio built with Docusaurus and deployed to Azure Static Web Apps.
 
-## Installation
+Live website: https://www.thaiphanit.com/
 
-```bash
-yarn
+## Purpose
+
+This portfolio is designed to demonstrate practical implementation, troubleshooting, and documentation skills for roles such as:
+
+- IT Support / Desktop Support Engineer
+- System Administrator
+- Microsoft 365 Administrator
+- Intune / Endpoint Administrator
+- Modern Workplace Engineer
+- Azure Network / Infrastructure Support
+- Junior Security Administrator
+
+## Focus Areas
+
+- Microsoft 365 administration
+- Microsoft Intune and Endpoint Management
+- Microsoft Entra ID and Conditional Access
+- Azure Networking and AZ-700 lab scenarios
+- On-prem network services: DNS, DHCP, AD DS, file access, and VPN
+- Hybrid connectivity between on-premises and Azure
+- Defender XDR and Microsoft security operations
+- Microsoft Purview and data protection
+- SCCM / MECM troubleshooting
+
+## Repository Structure
+
+```text
+docs/
+├── portfolio/     # Microsoft 365, Intune, Security, Purview, SCCM/MECM labs
+├── network/       # On-prem, hybrid, and Azure network portfolio labs
+└── career/        # Recruiter overview, certification roadmap, interview stories
+
+blog/              # Technical articles and learning notes
+src/pages/         # Custom landing pages: Home, About, Resume, Recruiters, Contact
+src/css/           # Custom visual styling
+static/img/        # Diagrams, screenshots, and evidence images
+static/files/      # Resume PDF
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+## Production Build
 
 ```bash
-yarn build
+npm run build
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
 
-Using SSH:
+The site is deployed to Azure Static Web Apps through GitHub Actions.
 
-```bash
-USE_SSH=true yarn deploy
-```
+## Certifications
 
-Not using SSH:
+- Microsoft Certified: Azure Administrator Associate — AZ-104
+- Microsoft Certified: Azure Network Engineer Associate — AZ-700
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## Portfolio Direction
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Current portfolio learning tracks include Microsoft 365 Administrator, Endpoint Administrator, Intune, Entra ID, Defender XDR, Purview, SCCM/MECM, and on-prem to Azure network infrastructure.

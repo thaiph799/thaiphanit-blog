@@ -6,58 +6,24 @@ export default function Contact(): React.ReactElement {
   return (
     <Layout
       title="Contact"
-      description="Contact Phan Hoang Thai for Microsoft 365, Endpoint Management, Azure, and Security portfolio.">
-      <main style={{ padding: '3rem 2rem', maxWidth: '900px', margin: '0 auto' }}>
-        <h1>Contact</h1>
-
-        <p>
-          Thank you for visiting my technical portfolio. This website documents my
-          hands-on work across Microsoft 365, Intune, Entra ID, Azure Networking,
-          Endpoint Management, and Security.
-        </p>
-
-        <h2>Connect with me</h2>
-
-        <ul>
-          <li>
-            <strong>LinkedIn:</strong>{' '}
-            <a
-              href="https://www.linkedin.com/thaiph"
-              target="_blank"
-              rel="noopener noreferrer">
-              View LinkedIn Profile
-            </a>
-          </li>
-
-          <li>
-            <strong>GitHub:</strong>{' '}
-            <a
-              href="https://github.com/thaiph799"
-              target="_blank"
-              rel="noopener noreferrer">
-              View GitHub Profile
-            </a>
-          </li>
-
-          <li>
-            <strong>Resume:</strong>{' '}
-            <Link to="/resume">
-              View Resume
+      description="Contact page for Thai Phan IT portfolio."
+    >
+      <main className="tpPage">
+        <section className="tpPageHero">
+          <p className="tpEyebrow">Contact</p>
+          <h1>Connect with Thai Phan IT</h1>
+          <p>
+            For recruiters and technical reviewers, please use the resume and GitHub links below to review my portfolio evidence and project structure.
+          </p>
+          <div className="tpButtonRow">
+            <Link className="button button--secondary button--lg" to="/recruiters">
+              View Resume Page
             </Link>
-          </li>
-        </ul>
-
-        <h2>Focus Areas</h2>
-
-        <ul>
-          <li>Microsoft 365 Administration</li>
-          <li>Microsoft Intune and Endpoint Management</li>
-          <li>Microsoft Entra ID and Conditional Access</li>
-          <li>Microsoft Defender XDR</li>
-          <li>Microsoft Purview</li>
-          <li>Azure Networking</li>
-          <li>SCCM / MECM Troubleshooting</li>
-        </ul>
+            <Link className="button button--secondary button--lg" href="https://github.com/thaiph799/thaiphanit-blog">
+              GitHub Repository
+            </Link>
+          </div>
+        </section>
       </main>
     </Layout>
   );
