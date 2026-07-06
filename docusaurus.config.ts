@@ -31,10 +31,12 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 'ALL',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
-          },
+         },
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -95,6 +97,7 @@ const config: Config = {
           ],
         },
         {label: 'Blog', to: '/blog', position: 'left'},
+        {label: 'Certifications', to: '/certifications', position: 'right'},
         {label: 'Recruiters', to: '/recruiters', position: 'right'},
         {label: 'Resume', to: '/resume', position: 'right'},
         {

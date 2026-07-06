@@ -26,6 +26,7 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       items: [
         'portfolio/intune-endpoint/intune-portfolio-overview',
+        'portfolio/intune-endpoint/2026-07-06-mecm-intune-co-management-architecture',
         'portfolio/intune-endpoint/byod-data-protection',
         'portfolio/intune-endpoint/windows-11-compliance-policy',
         'portfolio/intune-endpoint/windows-11-security-baseline',
