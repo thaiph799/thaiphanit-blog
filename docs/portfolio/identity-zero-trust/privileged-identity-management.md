@@ -8,7 +8,7 @@ sidebar_position: 19
 
 ## Purpose
 
-This page is part of the Thai Phan IT professional portfolio structure.
+This page is part of the Phan Hoang Thai professional portfolio structure.
 
 ## Business Context
 

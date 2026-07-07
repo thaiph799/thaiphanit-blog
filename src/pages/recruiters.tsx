@@ -15,7 +15,7 @@ export default function Recruiters(): React.ReactElement {
   return (
     <Layout
       title="For Recruiters"
-      description="Recruiter overview for Thai Phan IT portfolio."
+      description="Recruiter overview for Phan Hoang Thai portfolio."
     >
       <main className="tpPage">
         <section className="tpPageHero">
@@ -43,8 +43,8 @@ export default function Recruiters(): React.ReactElement {
           <article className="tpContentCard">
             <h2>Certifications</h2>
             <ul>
-              <li>AZ-104 — Azure Administrator Associate</li>
-              <li>AZ-700 — Azure Network Engineer Associate</li>
+              <li>AZ-104 - Azure Administrator Associate</li>
+              <li>AZ-700 - Azure Network Engineer Associate</li>
             </ul>
             <p>
               Current portfolio learning direction: MS-102, MD-102, Microsoft 365 E5, Intune, Defender XDR, Purview, and enterprise troubleshooting.

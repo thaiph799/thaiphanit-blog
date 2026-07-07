@@ -17,11 +17,11 @@ export default function About(): React.ReactElement {
   return (
     <Layout
       title="About"
-      description="About Phan Hoang Thai and the Thai Phan IT technical portfolio."
+      description="About Phan Hoang Thai and the Phan Hoang Thai technical portfolio."
     >
       <main className="tpPage">
         <section className="tpPageHero">
-          <p className="tpEyebrow">About Thai Phan IT</p>
+          <p className="tpEyebrow">About Phan Hoang Thai</p>
           <h1>Microsoft cloud, endpoint, network, and security portfolio.</h1>
           <p>
             My name is Phan Hoang Thai. I am building a professional technical portfolio focused on Microsoft 365, Intune, Azure Networking, on-prem infrastructure, security, and enterprise IT operations.
@@ -42,8 +42,8 @@ export default function About(): React.ReactElement {
           <article className="tpContentCard">
             <h2>Verified Certifications</h2>
             <ul>
-              <li>Microsoft Certified: Azure Administrator Associate — AZ-104</li>
-              <li>Microsoft Certified: Azure Network Engineer Associate — AZ-700</li>
+              <li>Microsoft Certified: Azure Administrator Associate - AZ-104</li>
+              <li>Microsoft Certified: Azure Network Engineer Associate - AZ-700</li>
             </ul>
 
             <h3>Active Portfolio Learning Tracks</h3>

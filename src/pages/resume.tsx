@@ -29,7 +29,7 @@ export default function Resume(): React.ReactElement {
     >
       <main className="tpPage">
         <section className="tpPageHero">
-          <p className="tpEyebrow">Resume & Recruiter Overview</p>
+          <p className="tpEyebrow">Resume and Recruiter Overview</p>
           <h1>Phan Hoang Thai</h1>
           <p>
             Microsoft 365 | Intune | Endpoint Management | Azure Networking | On-Prem Infrastructure | Security | IT Support
@@ -58,8 +58,8 @@ export default function Resume(): React.ReactElement {
           <article className="tpContentCard">
             <h2>Certifications</h2>
             <ul>
-              <li>Microsoft Certified: Azure Administrator Associate — AZ-104</li>
-              <li>Microsoft Certified: Azure Network Engineer Associate — AZ-700</li>
+              <li>Microsoft Certified: Azure Administrator Associate - AZ-104</li>
+              <li>Microsoft Certified: Azure Network Engineer Associate - AZ-700</li>
             </ul>
 
             <h3>Portfolio Tracks</h3>
@@ -81,7 +81,7 @@ export default function Resume(): React.ReactElement {
                 <p>
                   Open this section to review lab structure, business context, implementation notes, verification, and evidence placeholders.
                 </p>
-                <Link to={item.link}>Open →</Link>
+                <Link to={item.link}>Open</Link>
               </article>
             ))}
           </div>

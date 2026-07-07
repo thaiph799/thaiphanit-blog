@@ -6,12 +6,12 @@ export default function Contact(): React.ReactElement {
   return (
     <Layout
       title="Contact"
-      description="Contact page for Thai Phan IT portfolio."
+      description="Contact page for Phan Hoang Thai portfolio."
     >
       <main className="tpPage">
         <section className="tpPageHero">
           <p className="tpEyebrow">Contact</p>
-          <h1>Connect with Thai Phan IT</h1>
+          <h1>Connect with Phan Hoang Thai</h1>
           <p>
             For recruiters and technical reviewers, please use the resume and GitHub links below to review my portfolio evidence and project structure.
           </p>

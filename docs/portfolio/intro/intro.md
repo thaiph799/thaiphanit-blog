@@ -1,6 +1,6 @@
 ---
 title: Portfolio Overview
-description: Overview of the Thai Phan IT enterprise portfolio.
+description: Overview of the Phan Hoang Thai enterprise portfolio.
 sidebar_position: 1
 ---
 

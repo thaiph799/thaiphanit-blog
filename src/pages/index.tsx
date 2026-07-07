@@ -66,17 +66,32 @@ const proofPoints = [
   'Network on-prem to Azure hybrid lab track',
 ];
 
+const operatingModel = [
+  {
+    label: 'Plan',
+    detail: 'Business requirement, scope, risk, and target architecture.',
+  },
+  {
+    label: 'Implement',
+    detail: 'Configuration workflow with repeatable steps and decision notes.',
+  },
+  {
+    label: 'Validate',
+    detail: 'Screenshots, logs, tests, troubleshooting, and interview talking points.',
+  },
+];
+
 export default function Home(): React.ReactElement {
   return (
     <Layout
       title="Microsoft 365, Intune, Azure Network & Security Portfolio"
-      description="Thai Phan IT is a professional technical portfolio covering Microsoft 365, Intune, Endpoint Management, Azure Networking, On-Prem Infrastructure, Security, and enterprise IT troubleshooting."
+      description="Phan Hoang Thai is a professional technical portfolio covering Microsoft 365, Intune, Endpoint Management, Azure Networking, On-Prem Infrastructure, Security, and enterprise IT troubleshooting."
     >
       <header className="tpHero">
         <div className="tpHeroInner">
           <div className="tpHeroText">
-            <p className="tpEyebrow">Microsoft Cloud • Endpoint • Network • Security</p>
-            <h1>Building an enterprise-ready Microsoft infrastructure portfolio.</h1>
+            <p className="tpEyebrow">Microsoft Cloud / Endpoint / Network / Security</p>
+            <h1>Enterprise IT portfolio built around evidence, architecture, and operations.</h1>
             <p className="tpHeroDescription">
               I document hands-on labs, architecture notes, troubleshooting workflows, and recruiter-ready evidence across Microsoft 365, Intune, Entra ID, Azure Networking, on-prem infrastructure, Defender XDR, Purview, and SCCM/MECM.
             </p>
@@ -95,7 +110,7 @@ export default function Home(): React.ReactElement {
 
           <aside className="tpHeroCard">
             <p className="tpCardLabel">Featured Track</p>
-            <h2>On-Prem → Hybrid → Azure</h2>
+            <h2>On-Prem to Hybrid to Azure</h2>
             <p>
               A structured network and infrastructure portfolio that connects Windows Server, AD DS, DNS/DHCP, VPN, Azure hub-spoke design, firewall routing, and Microsoft 365 cloud access.
             </p>
@@ -137,7 +152,27 @@ export default function Home(): React.ReactElement {
                 <span>{track.category}</span>
                 <h3>{track.title}</h3>
                 <p>{track.description}</p>
-                <Link to={track.link}>Open track →</Link>
+                <Link to={track.link}>Open track</Link>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="tpSection tpSectionCompact">
+          <div className="tpSectionHeader">
+            <p className="tpEyebrow">Delivery Standard</p>
+            <h2>Each lab is written like work that can be reviewed.</h2>
+            <p>
+              The portfolio is designed for hiring managers and technical reviewers who want to see how a problem is framed, implemented, verified, and explained.
+            </p>
+          </div>
+
+          <div className="tpProcessGrid">
+            {operatingModel.map((item, index) => (
+              <article className="tpProcessItem" key={item.label}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <h3>{item.label}</h3>
+                <p>{item.detail}</p>
               </article>
             ))}
           </div>

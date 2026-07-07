@@ -151,6 +151,29 @@ const sidebars: SidebarsConfig = {
     },
   ],
 
+  enterpriseNetworkArchitectureSidebar: [
+    {
+      type: 'category',
+      label: 'Enterprise Network Architecture',
+      collapsed: false,
+      items: [
+        'enterprise-network-architecture/intro',
+        'enterprise-network-architecture/enterprise-network-portfolio-roadmap',
+        'enterprise-network-architecture/cml-lab-environment',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Cisco CML Enterprise Labs',
+      collapsed: false,
+      items: [
+        'enterprise-network-architecture/cisco-cml/lab-01-wan-ospf-master-topology',
+        'enterprise-network-architecture/cisco-cml/lab-02-mpls-ldp-site-pair',
+        'enterprise-network-architecture/cisco-cml/lab-11-bfd-ospf-bgp',
+      ],
+    },
+  ],
+  
   careerSidebar: [
     {
       type: 'category',

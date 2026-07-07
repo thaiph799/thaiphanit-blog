@@ -1,27 +1,34 @@
 ---
 title: Active Directory Network Foundation
-description: Active Directory Network Foundation lab documentation.
+description: Network dependencies for Active Directory Domain Services.
 sidebar_position: 5
 ---
 
 # Active Directory Network Foundation
 
-## Purpose
+## Scenario
 
-This page is part of the Thai Phan IT professional portfolio structure.
+Active Directory Domain Services depends on reliable DNS, routing, time synchronization, and client-to-domain-controller connectivity. This lab explains the network foundation required before domain join, Group Policy, authentication, and file access can work consistently.
 
-## Business Context
+## Core Dependencies
 
-Use this page to document the business problem, target architecture, implementation workflow, verification evidence, troubleshooting notes, and interview explanation.
+| Dependency | Why it matters |
+|---|---|
+| DNS | Clients must locate domain controllers and service records |
+| IP addressing | Domain controllers, servers, and clients need predictable reachability |
+| Routing | Subnets must reach domain controllers and required services |
+| Time sync | Kerberos authentication depends on acceptable time skew |
+| Firewall rules | Authentication, LDAP, SMB, DNS, and RPC traffic must be permitted |
 
-## Evidence Placeholders
+## Validation Checklist
 
-- Screenshot: configuration page
-- Screenshot: verification result
-- Screenshot: logs or diagnostic output
-- Notes: what issue this lab solves in a real enterprise environment
+- Client can resolve the AD domain name.
+- Client can locate domain controller SRV records.
+- Client can ping or otherwise reach required domain controller interfaces.
+- Domain join succeeds from the target subnet.
+- Group Policy refresh completes without DNS or SYSVOL errors.
 
-## Next Step
+## Troubleshooting Notes
 
-Replace this starter content with the full lab write-up.
+Start with DNS and routing before reviewing higher-level Windows errors. Many domain join and Group Policy failures are symptoms of missing name resolution, blocked ports, or incorrect subnet routing.
 

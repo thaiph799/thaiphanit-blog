@@ -93,7 +93,7 @@ export default function Certifications(): React.ReactElement {
   return (
     <Layout
       title="Certifications"
-      description="Microsoft certifications and related portfolio evidence for Thai Phan IT."
+      description="Microsoft certifications and related portfolio evidence for Phan Hoang Thai."
     >
       <main className="tpPage">
         <section className="tpPageHero">

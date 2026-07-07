@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Thai Phan IT',
+  title: 'Phan Hoang Thai',
   tagline:
-    'Microsoft 365 | Intune | Endpoint Management | Azure Network | On-Prem Infrastructure | Security Portfolio',
+    'Microsoft 365, Intune, Azure Networking, Security, and Enterprise Infrastructure Portfolio',
   favicon: 'img/favicon.ico',
 
   url: 'https://www.thaiphanit.com',
@@ -15,7 +15,11 @@ const config: Config = {
   projectName: 'thaiphanit-blog',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -63,11 +67,7 @@ const config: Config = {
     },
 
     navbar: {
-      title: 'Thai Phan IT',
-      logo: {
-        alt: 'Thai Phan IT Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'Phan Hoang Thai',
       items: [
         {
           type: 'dropdown',
@@ -94,6 +94,19 @@ const config: Config = {
             {label: 'Hybrid Connectivity', to: '/docs/network/hybrid/site-to-site-vpn-to-azure'},
             {label: 'Azure Network', to: '/docs/network/azure/azure-network-overview'},
             {label: 'Network Troubleshooting', to: '/docs/network/on-prem/on-prem-network-troubleshooting-toolkit'},
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Enterprise Network Architecture',
+          position: 'left',
+          items: [
+            {label: 'Architecture Overview', to: '/docs/enterprise-network-architecture/intro'},
+            {label: 'Architecture Roadmap', to: '/docs/enterprise-network-architecture/enterprise-network-portfolio-roadmap'},
+            {label: 'CML Lab Environment', to: '/docs/enterprise-network-architecture/cml-lab-environment'},
+            {label: 'WAN OSPF Master Topology', to: '/docs/enterprise-network-architecture/cisco-cml/lab-01-wan-ospf-master-topology'},
+            {label: 'MPLS LDP Site Pair', to: '/docs/enterprise-network-architecture/cisco-cml/lab-02-mpls-ldp-site-pair'},
+            {label: 'BFD, OSPF, and BGP', to: '/docs/enterprise-network-architecture/cisco-cml/lab-11-bfd-ospf-bgp'},
           ],
         },
         {label: 'Blog', to: '/blog', position: 'left'},
@@ -138,7 +151,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Thai Phan IT. Built with Docusaurus.`,
+      copyright: `Copyright (c) ${new Date().getFullYear()} Phan Hoang Thai. Built with Docusaurus.`,
     },
 
     prism: {

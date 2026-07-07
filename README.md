@@ -1,4 +1,4 @@
-# Thai Phan IT — Microsoft 365, Intune, Azure Network & Security Portfolio
+# Phan Hoang Thai — Microsoft 365, Intune, Azure Network & Security Portfolio
 
 This repository contains my personal technical portfolio built with Docusaurus and deployed to Azure Static Web Apps.
 
