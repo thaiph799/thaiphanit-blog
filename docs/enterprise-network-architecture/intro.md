@@ -1,16 +1,17 @@
 ---
-title: Enterprise Network Architecture
-description: Overview of the enterprise network architecture portfolio.
+title: Enterprise Network Architecture Labs
+description: Structured overview of enterprise routing, resiliency, and Cisco CML lab evidence.
+sidebar_label: Architecture Overview
 sidebar_position: 1
 ---
 
-# Enterprise Network Architecture
+# Enterprise Network Architecture Labs
 
-## Portfolio Story
+## Track Purpose
 
 This track focuses on enterprise network design, routing resiliency, WAN architecture, and Cisco CML lab evidence. It complements the Microsoft cloud and endpoint portfolio by showing the network layer that enterprise services depend on.
 
-The story is:
+## Architecture Flow
 
 ```text
 Campus and branch design
@@ -21,14 +22,14 @@ Campus and branch design
   -> Cloud and Microsoft 365 dependency awareness
 ```
 
-## Main Tracks
+## Review Tracks
 
 | Track | What it proves |
 |---|---|
 | CML Lab Environment | Repeatable lab standards, addressing, naming, evidence, and validation workflow |
-| WAN OSPF Master Topology | Multi-site routing, adjacency validation, route propagation, and failure testing |
-| MPLS LDP Site Pair | Label distribution, provider transport concepts, and packet path explanation |
-| BFD, OSPF, and BGP | Fast failure detection, convergence behavior, and resiliency tradeoffs |
+| WAN Routing with OSPF | Multi-site routing, adjacency validation, route propagation, and failure testing |
+| Provider Transport with MPLS LDP | Label distribution, provider transport concepts, and packet path explanation |
+| Resiliency with BFD, OSPF, and BGP | Fast failure detection, convergence behavior, and resiliency tradeoffs |
 
 ## Target Roles
 

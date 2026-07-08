@@ -1,30 +1,33 @@
 ---
-title: Portfolio Overview
-description: Overview of the Phan Hoang Thai enterprise portfolio.
+title: Professional Portfolio Roadmap
+description: Structured overview of the Phan Hoang Thai enterprise IT portfolio.
+sidebar_label: Portfolio Roadmap
 sidebar_position: 1
 ---
 
-# Portfolio Overview
+# Professional Portfolio Roadmap
 
 ## Portfolio Positioning
 
-This website is an evidence-based technical portfolio for Microsoft 365, Intune, Endpoint Management, Azure Networking, On-Prem Infrastructure, Security, and enterprise IT operations.
+This website is an evidence-based technical portfolio for Microsoft cloud operations, endpoint modernization, identity governance, security operations, data protection, network infrastructure, and enterprise IT support.
 
-## Portfolio Pillars
+## Review Tracks
 
-| Pillar | Purpose |
+| Track | Purpose | Best Starting Point |
 |---|---|
-| Microsoft 365 E5 | Tenant administration, governance, service operations, and enterprise readiness |
-| Intune & Endpoint | Device compliance, app protection, endpoint hardening, and modern management |
-| Identity & Zero Trust | Entra ID, MFA, Conditional Access, break-glass, and access lifecycle |
-| Security Operations | Defender XDR, phishing protection, incident response, and alert triage |
-| Compliance & Purview | Sensitivity labels, DLP, retention, audit, and eDiscovery |
-| Network & Infrastructure | On-prem network, hybrid connectivity, Azure networking, and troubleshooting |
-| SCCM / MECM | Client policy, deployment, logs, reboot policy, and enterprise troubleshooting |
+| Microsoft 365 Cloud Operations | Tenant administration, service health, Secure Score, governance, and operational readiness | Microsoft 365 Cloud Operations |
+| Endpoint Modernization | Intune, Configuration Manager, Autopilot, app deployment, security baseline, automation, rollout, and hypercare | Endpoint Modernization Executive Brief |
+| Identity & Access Governance | Entra ID, MFA, Conditional Access, break-glass accounts, privileged access, and access lifecycle | Identity & Access Governance |
+| Security Operations Center | Defender XDR, phishing protection, incident response, attack simulation, and alert triage | Security Operations Center |
+| Data Governance & Purview | Sensitivity labels, DLP, retention, audit, and eDiscovery | Data Governance & Purview |
+| Endpoint Support & Configuration Manager | Client policy, software deployment, reboot control, logs, and enterprise troubleshooting | Endpoint Support & ConfigMgr |
+| Network & Infrastructure | On-prem infrastructure, hybrid connectivity, Azure networking, and troubleshooting | Network Foundation |
 
-## How Each Lab Is Written
+## How To Read
 
-Each lab should include:
+Use the portfolio like a set of focused evidence packs. Start with the track overview, then open only the pages that match the role or topic you are reviewing.
+
+Each detailed page is designed to show:
 
 1. Business problem
 2. Target architecture
@@ -33,4 +36,3 @@ Each lab should include:
 5. Troubleshooting notes
 6. Business impact
 7. Interview explanation
-

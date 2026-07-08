@@ -10,7 +10,7 @@ const focusAreas = [
   'On-prem network services: DNS, DHCP, AD DS, file access',
   'Microsoft Defender XDR and security operations',
   'Microsoft Purview and data protection',
-  'SCCM / MECM troubleshooting',
+  'Configuration Manager troubleshooting',
 ];
 
 export default function About(): React.ReactElement {
@@ -24,7 +24,7 @@ export default function About(): React.ReactElement {
           <p className="tpEyebrow">About Phan Hoang Thai</p>
           <h1>Microsoft cloud, endpoint, network, and security portfolio.</h1>
           <p>
-            My name is Phan Hoang Thai. I am building a professional technical portfolio focused on Microsoft 365, Intune, Azure Networking, on-prem infrastructure, security, and enterprise IT operations.
+            My name is Phan Hoang Thai. I am building a professional technical portfolio focused on Microsoft 365 cloud operations, endpoint modernization, Azure networking, on-prem infrastructure, security, and enterprise IT operations.
           </p>
         </section>
 
@@ -72,10 +72,10 @@ export default function About(): React.ReactElement {
             Start with the portfolio overview or the Network track to see the complete on-prem, hybrid, and Azure infrastructure structure.
           </p>
           <div className="tpButtonRowCenter">
-            <Link className="button button--primary" to="/docs/portfolio/intro">
-              Portfolio Overview
+            <Link className="button button--primary" to="/docs/enterprise-networking/intro">
+              Portfolio Roadmap
             </Link>
-            <Link className="button button--secondary" to="/docs/network/intro">
+            <Link className="button button--secondary" to="/docs/hybrid-cloud/intro">
               Network Track
             </Link>
           </div>

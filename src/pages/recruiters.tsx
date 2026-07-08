@@ -8,7 +8,7 @@ const strengths = [
   'Microsoft Entra ID, Conditional Access, MFA, and Zero Trust access control',
   'Azure networking, hub-spoke architecture, VPN, routing, DNS, NSG, and firewall concepts',
   'On-prem infrastructure fundamentals: AD DS, DNS, DHCP, file access, and troubleshooting',
-  'SCCM / MECM client-side troubleshooting and log analysis',
+  'Configuration Manager client-side troubleshooting and log analysis',
 ];
 
 export default function Recruiters(): React.ReactElement {
@@ -35,7 +35,7 @@ export default function Recruiters(): React.ReactElement {
               <li>Microsoft 365 Administrator</li>
               <li>Intune / Endpoint Administrator</li>
               <li>Modern Workplace Engineer</li>
-              <li>Azure Network / Infrastructure Support</li>
+              <li>Azure Networking / Infrastructure Support</li>
               <li>Junior Security Administrator</li>
             </ul>
           </article>
@@ -47,7 +47,7 @@ export default function Recruiters(): React.ReactElement {
               <li>AZ-700 - Azure Network Engineer Associate</li>
             </ul>
             <p>
-              Current portfolio learning direction: MS-102, MD-102, Microsoft 365 E5, Intune, Defender XDR, Purview, and enterprise troubleshooting.
+              Current portfolio learning direction: MS-102, MD-102, Microsoft 365 cloud operations, endpoint modernization, Defender XDR, Purview, and enterprise troubleshooting.
             </p>
           </article>
         </section>
@@ -66,14 +66,17 @@ export default function Recruiters(): React.ReactElement {
         <section className="tpBlogCta">
           <h2>Fast review links</h2>
           <p>
-            Review the main portfolio track, network track, and downloadable resume.
+            Start with the endpoint modernization brief, then review the portfolio roadmap, network foundation, and resume.
           </p>
           <div className="tpButtonRowCenter">
-            <Link className="button button--primary" to="/docs/portfolio/intro">
-              Portfolio
+            <Link className="button button--primary" to="/docs/modern-workspace/endpoint-management/global-endpoint-management-case-study">
+              Endpoint Brief
             </Link>
-            <Link className="button button--secondary" to="/docs/network/intro">
-              Network
+            <Link className="button button--primary" to="/docs/modern-workspace/intro">
+              Roadmap
+            </Link>
+            <Link className="button button--secondary" to="/docs/enterprise-networking/intro">
+              Network Foundation
             </Link>
             <Link className="button button--secondary" to="/resume">
               Resume

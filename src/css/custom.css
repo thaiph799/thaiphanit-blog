@@ -186,11 +186,18 @@
   gap: 1.2rem;
 }
 
+.tpArticleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
 .tpCardGridTwo {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tpLabCard,
+.tpArticleCard,
 .tpContentCard,
 .tpProfileBox,
 .tpBlogCta {
@@ -205,12 +212,21 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.tpArticleCard {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
 .tpLabCard:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 36px rgba(15, 23, 42, 0.11);
 }
 
-.tpLabCard span {
+.tpLabCard span,
+.tpArticleCard span {
   display: inline-block;
   color: #2563eb;
   font-weight: 800;
@@ -220,23 +236,37 @@
   margin-bottom: 1rem;
 }
 
-.tpLabCard h3 {
+.tpLabCard h3,
+.tpArticleCard h3 {
   font-size: 1.25rem;
   line-height: 1.35;
   margin-bottom: 0.8rem;
 }
 
-.tpLabCard p {
+.tpArticleCard h3 {
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.25;
+}
+
+.tpLabCard p,
+.tpArticleCard p {
   color: #475569;
   line-height: 1.7;
 }
 
-.tpLabCard a {
-  font-weight: 800;
-  text-decoration: none;
+.tpArticleCard p {
+  font-size: 1.03rem;
 }
 
-.tpLabCard a::after {
+.tpLabCard a,
+.tpArticleCard a {
+  font-weight: 800;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.tpLabCard a::after,
+.tpArticleCard a::after {
   content: " ->";
 }
 
@@ -354,6 +384,300 @@
   text-align: center;
 }
 
+.tpProjectHero,
+.tpDomainHero,
+.tpCaseHeader {
+  background: linear-gradient(135deg, #0f172a 0%, #164e63 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 4rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tpProjectHero h1,
+.tpDomainHero h1,
+.tpCaseHeader h1 {
+  color: white;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+
+.tpProjectHero p,
+.tpDomainHero p,
+.tpCaseHeader p {
+  color: #dbeafe;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  max-width: 820px;
+}
+
+.tpProjectGrid,
+.tpDomainGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.tpProjectCard,
+.tpDomainCard,
+.tpCaseSection,
+.tpCaseCta {
+  background: var(--tp-surface);
+  border: 1px solid var(--tp-border);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.tpProjectCard,
+.tpDomainCard {
+  min-height: 360px;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tpProjectCard h2,
+.tpDomainCard h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.tpProjectCard p,
+.tpDomainCard p,
+.tpCaseSection p,
+.tpCaseSection li {
+  color: #475569;
+  line-height: 1.75;
+}
+
+.tpProjectRole {
+  color: #0f6cbd !important;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.tpProjectDomain {
+  color: #107c10;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.tpTagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.3rem 0;
+}
+
+.tpTagRow span {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  color: #1e3a8a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.42rem 0.62rem;
+}
+
+.tpProjectCard a,
+.tpDomainCard a {
+  font-weight: 800;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.tpProjectCard a::after,
+.tpDomainCard a::after {
+  content: " ->";
+}
+
+.tpDomainPage,
+.tpCaseStudy {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.tpCaseMeta {
+  font-weight: 800;
+}
+
+.tpCaseSection {
+  padding: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.tpCaseSection h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 1rem;
+}
+
+.tpArchitecturePanel {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+
+.tpArchitecturePanel div {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #0f172a;
+  font-weight: 800;
+  min-height: 88px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tpArchitecturePanel span {
+  color: #0f6cbd;
+  font-weight: 900;
+}
+
+.tpCaseList {
+  padding-left: 1.2rem;
+}
+
+.tpImpactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.tpImpactGrid div {
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.tpImpactGrid strong {
+  color: #0f6cbd;
+  display: block;
+  font-size: 2rem;
+}
+
+.tpImpactGrid span {
+  color: #475569;
+  line-height: 1.5;
+}
+
+.tpCaseCta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.4rem;
+}
+
+.theme-code-block {
+  position: relative;
+}
+
+.table-of-contents {
+  font-size: 0.86rem;
+}
+
+.theme-code-block,
+div[class*='codeBlockContainer'] {
+  border-radius: 8px;
+}
+
+div[class*='language-cli'],
+div[class*='language-cisco'],
+div[class*='language-aruba'] {
+  background: #050505;
+  border: 1px solid #1f2937;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+div[class*='language-cli'] pre,
+div[class*='language-cisco'] pre,
+div[class*='language-aruba'] pre {
+  background: #050505 !important;
+}
+
+div[class*='language-cli'] code,
+div[class*='language-cisco'] code,
+div[class*='language-aruba'] code {
+  color: #d1fae5;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, "Liberation Mono", monospace;
+}
+
+.theme-code-block-highlighted-line {
+  background: rgba(250, 204, 21, 0.18);
+  border-left: 3px solid #facc15;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.tpDocBadgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.5rem 0 1.5rem;
+}
+
+.tpDocBadge {
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  color: #075985;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.36rem 0.58rem;
+}
+
+.tpDocBadgeLevel {
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.alert--danger {
+  border-left-width: 6px;
+  box-shadow: 0 12px 28px rgba(127, 29, 29, 0.08);
+}
+
+.alert--warning {
+  border-left-width: 6px;
+}
+
+main img {
+  cursor: zoom-in;
+}
+
+.tpLightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.88);
+  border: 0;
+  padding: 2rem;
+  cursor: zoom-out;
+}
+
+.tpLightbox img {
+  max-width: min(96vw, 1400px);
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+}
+
 @media screen and (max-width: 996px) {
   .tpHeroInner,
   .tpTwoColumn,
@@ -363,6 +687,25 @@
 
   .tpCardGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tpArticleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tpProjectGrid,
+  .tpDomainGrid,
+  .tpImpactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tpArchitecturePanel {
+    grid-template-columns: 1fr;
+  }
+
+  .tpArchitecturePanel span {
+    transform: rotate(90deg);
+    justify-self: center;
   }
 
   .tpProcessGrid {
@@ -387,19 +730,22 @@
   }
 
   .tpCardGrid,
+  .tpArticleGrid,
   .tpCardGridTwo {
     grid-template-columns: 1fr;
   }
 
   .tpHeroButtons,
   .tpButtonRow,
-  .tpButtonRowCenter {
+  .tpButtonRowCenter,
+  .tpCaseCta {
     flex-direction: column;
   }
 
   .tpHeroButtons .button,
   .tpButtonRow .button,
-  .tpButtonRowCenter .button {
+  .tpButtonRowCenter .button,
+  .tpCaseCta .button {
     width: 100%;
   }
 }
@@ -411,19 +757,29 @@
 }
 
 [data-theme='dark'] .tpLabCard,
+[data-theme='dark'] .tpArticleCard,
 [data-theme='dark'] .tpProfileBox,
 [data-theme='dark'] .tpBlogCta,
-[data-theme='dark'] .tpContentCard {
+[data-theme='dark'] .tpContentCard,
+[data-theme='dark'] .tpProjectCard,
+[data-theme='dark'] .tpDomainCard,
+[data-theme='dark'] .tpCaseSection,
+[data-theme='dark'] .tpCaseCta {
   background: #1f2937;
   border-color: #374151;
 }
 
 [data-theme='dark'] .tpSectionHeader p,
 [data-theme='dark'] .tpLabCard p,
+[data-theme='dark'] .tpArticleCard p,
 [data-theme='dark'] .tpTwoColumn p,
 [data-theme='dark'] .tpContentCard p,
 [data-theme='dark'] .tpContentCard li,
-[data-theme='dark'] .tpSectionNarrow p {
+[data-theme='dark'] .tpSectionNarrow p,
+[data-theme='dark'] .tpProjectCard p,
+[data-theme='dark'] .tpDomainCard p,
+[data-theme='dark'] .tpCaseSection p,
+[data-theme='dark'] .tpCaseSection li {
   color: #d1d5db;
 }
 
@@ -431,4 +787,23 @@
   background: #1e3a8a;
   color: #dbeafe;
   border-color: #3b82f6;
+}
+
+[data-theme='dark'] .tpTagRow span,
+[data-theme='dark'] .tpArchitecturePanel div,
+[data-theme='dark'] .tpImpactGrid div {
+  background: #111827;
+  border-color: #374151;
+  color: #dbeafe;
+}
+
+[data-theme='dark'] .tpDocBadge {
+  background: #0f172a;
+  border-color: #2563eb;
+  color: #dbeafe;
+}
+
+[data-theme='dark'] .tpDocBadgeLevel {
+  border-color: #22c55e;
+  color: #bbf7d0;
 }

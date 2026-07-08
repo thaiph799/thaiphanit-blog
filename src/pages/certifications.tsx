@@ -11,12 +11,12 @@ const certifications = [
       'Validates Azure administration skills including identity, governance, compute, storage, virtual networking, monitoring, and backup.',
     relatedLabs: [
       {
-        label: 'Azure Network Overview',
-        link: '/docs/network/azure/azure-network-overview',
+        label: 'Azure Networking Overview',
+        link: '/docs/hybrid-cloud/azure-networking/overview',
       },
       {
         label: 'Azure VNet, Subnet, and NSG',
-        link: '/docs/network/azure/azure-vnet-subnet-nsg',
+        link: '/docs/hybrid-cloud/azure-networking/virtual-wan-vpn-firewall',
       },
     ],
   },
@@ -29,15 +29,15 @@ const certifications = [
     relatedLabs: [
       {
         label: 'AZ-700 Lab Track',
-        link: '/docs/network/azure/az-700-lab-track',
+        link: '/docs/hybrid-cloud/azure-networking/overview',
       },
       {
         label: 'Azure Hub-Spoke Architecture',
-        link: '/docs/network/azure/azure-hub-spoke-architecture',
+        link: '/docs/hybrid-cloud/azure-networking/virtual-wan-vpn-firewall',
       },
       {
         label: 'Site-to-Site VPN to Azure',
-        link: '/docs/network/hybrid/site-to-site-vpn-to-azure',
+        link: '/docs/hybrid-cloud/azure-networking/virtual-wan-vpn-firewall',
       },
     ],
   },
@@ -49,16 +49,16 @@ const certifications = [
       'Validates Microsoft 365 administration skills including tenant management, identity, security, compliance, governance, and service operations.',
     relatedLabs: [
       {
-        label: 'Microsoft 365 E5 Global Enterprise Scenario',
-        link: '/docs/portfolio/m365-e5/global-enterprise-scenario',
+        label: 'Microsoft 365 Cloud Operations Scenario',
+        link: '/docs/modern-workspace/intro',
       },
       {
         label: 'Microsoft Secure Score Improvement',
-        link: '/docs/portfolio/m365-e5/secure-score-improvement',
+        link: '/docs/modern-workspace/enterprise-defense/overview',
       },
       {
-        label: 'Identity & Zero Trust Overview',
-        link: '/docs/portfolio/identity-zero-trust/identity-zero-trust-overview',
+        label: 'Identity & Access Governance Overview',
+        link: '/docs/hybrid-cloud/azure-core/entra-rbac-policy',
       },
     ],
   },
@@ -70,20 +70,20 @@ const certifications = [
       'Validates endpoint administration skills including Microsoft Intune, Windows endpoint management, compliance, configuration, security baseline, and application protection.',
     relatedLabs: [
       {
-        label: 'Intune & Endpoint Portfolio Overview',
-        link: '/docs/portfolio/intune-endpoint/intune-portfolio-overview',
+        label: 'Endpoint Modernization Executive Brief',
+        link: '/docs/modern-workspace/endpoint-management/global-endpoint-management-case-study',
       },
       {
-        label: 'BYOD Data Protection',
-        link: '/docs/portfolio/intune-endpoint/byod-data-protection',
+        label: 'Windows Autopilot Provisioning',
+        link: '/docs/modern-workspace/endpoint-management/windows-autopilot-intune',
       },
       {
-        label: 'Windows 11 Compliance Policy',
-        link: '/docs/portfolio/intune-endpoint/windows-11-compliance-policy',
+        label: 'Enterprise Application Deployment',
+        link: '/docs/modern-workspace/endpoint-management/win32-app-packaging',
       },
       {
         label: 'Windows 11 Security Baseline',
-        link: '/docs/portfolio/intune-endpoint/windows-11-security-baseline',
+        link: '/docs/modern-workspace/enterprise-defense/conditional-access-defender',
       },
     ],
   },
